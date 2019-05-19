@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="app">
+        <div class="app__header">
+            <h1>Калькулятор отношений</h1>
+            <%if(nums.num1) { %>
+            <p class="nums">Максимальное отношение числа к сумме его цифр среди чисел от <%=nums.num1%> до
+                <%=nums.num2%> равно <%=answer%></p>
+            <% } %>
+        </div>
+        <form action="/" method="POST" class="app__content">
+            <label for="city" , id="inscription">Числа</label>
+            <div class="input">
+                
+                <input type="number", id="city", placeholder="от", name="num1">
+                <input type="number" , id="city" , placeholder="до" , name="num2">
+            </div>
+            <button type="submit", class="btn">Ок</button>
+        </form>
+    </div>
+</body>
+</html>
